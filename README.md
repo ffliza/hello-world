@@ -1,2 +1,4 @@
 # hello-world
-toy repository
+Toy repository
+
+This is a Toy repository read me file.
