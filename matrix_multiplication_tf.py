@@ -1,0 +1,33 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Feb 16 11:01:11 2017
+
+matrix multiplication in tensorflow
+
+y = x * w
+
+@author: Farhana Ferdousi Liza
+"""
+
+import numpy as np
+import tensorflow as tf
+
+
+#define placeholder
+
+x = tf.placeholder(tf.float32, [3, 4])
+w = tf.placeholder(tf.float32, [4, 5])
+
+# define model
+mul = tf.matmul(x,w)
+
+# Generate some data
+x_rand_normal = np.random.normal(0.0,0.1, (3,4))
+w_rand_normal = np.random.normal(0.0,0.5, (4,5))
+
+# session starts 
+sess = tf.Session()
+y = sess.run(mul, feed_dict={x:x_rand_normal, w:w_rand_normal})
+
+# print result
+print(y, type(y)) 
