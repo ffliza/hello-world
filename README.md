@@ -1,4 +1,4 @@
-## A github page for explaining tensorflow.Session.close method
+
 
 This is a toy repository to test a github page.
 
