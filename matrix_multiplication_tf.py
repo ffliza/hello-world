@@ -32,6 +32,8 @@ w_rand_normal = np.random.normal(0.0,0.5, (4,5))
 sess = tf.Session()
 k = sess.run(init_op)
 y = sess.run(mul, feed_dict={x:x_rand_normal, w:w_rand_normal})
+sess.close()
+
 
 # print result
 print(k)
