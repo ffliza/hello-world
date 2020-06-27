@@ -4,7 +4,7 @@ This is a toy repository to test a github page. [Click](https://ffliza.github.io
 
 You can [click](https://github.com/ffliza/hello-world/blob/master/matrix_multiplication_tf.py) to see a basic tensorflow (version 1.0) multiplication using tensorflow.Session. 
 
-%--In this example, we have used the modified [minima](https://pages.github.com/themes/) theme.--%
+<!---  In this example, we have used the modified [minima](https://pages.github.com/themes/) theme. --->
 
 ### A Session Object
 
