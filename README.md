@@ -7,3 +7,14 @@ You can [click](https://github.com/ffliza/hello-world/blob/master/matrix_multipl
 [Click](https://ffliza.github.io/hello-world-tf-Session/) to see the purpose of tensorflow.Session.close method in the [code](https://github.com/ffliza/hello-world/blob/master/matrix_multiplication_tf.py). 
 
 In this example, we have used the [minima](https://pages.github.com/themes/) theme.
+
+### A Session Object
+
+A Session object encapsulates the environment in which Operation objects are executed, and Tensor objects are evaluated.
+
+In line 43, sess.close() is used. The reason is that a session may own resources, such as tf.Variable, and it is important to release these resources when they are no longer required. To do this, either tf.Session.close method on the session can be invoked, or the session can be used as a context manager like below
+
+```python
+with tf.Session() as sess:
+  sess.run(...)
+```
